@@ -106,7 +106,7 @@ struct BingoCardView: View {
             }
         }) {
             ZStack {
-                Text(isEmpty ? "Tap to edit" : (isFree ? "FREE" : value))
+                Text(isEmpty ? "Tap to edit this" : (isFree ? "FREE" : value))
                     .font(.system(size: isFree ? 16 : (isEmpty ? 14 : 16), weight: isFree ? .bold : .semibold, design: .rounded))
                     .foregroundColor(isFree ? .white : (isEmpty ? .secondary : .primary))
                     .multilineTextAlignment(.center)
